@@ -1,0 +1,10 @@
+{
+  "name": "van",
+  "description": "写着玩的小插件",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./src/index.html",
+    "default_icon": "./src/logo.png"
+  }
+}

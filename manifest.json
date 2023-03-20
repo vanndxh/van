@@ -1,17 +1,18 @@
 {
   "name": "van",
   "description": "写着玩的小插件",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 3,
   "action": {
-    "default_popup": "./index.html",
+    "default_popup": "./popup.html",
     "default_icon": "./logo.png"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["./js/index.js"],
+      "matches": ["https://live.bilibili.com/*"],
+      "js": ["./js/clear22.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "permissions": ["storage"]
 }

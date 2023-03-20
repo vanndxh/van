@@ -1,0 +1,16 @@
+body {
+  width: 150px;
+}
+
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}

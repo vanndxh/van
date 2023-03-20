@@ -10,4 +10,8 @@ const clearBili22 = () => {
     }
   }, 5000);
 };
+
+chrome.storage.sync.get(["bili22"]).then((res) => {
+  console.log(res, "拿到bili22的值");
+});
 clearBili22();

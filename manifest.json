@@ -1,16 +1,16 @@
 {
   "name": "van",
   "description": "写着玩的小插件",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 3,
   "action": {
-    "default_popup": "./popup.html",
-    "default_icon": "./logo.png"
+    "default_popup": "./src/popup/popup.html",
+    "default_icon": "./assets/logo.png"
   },
   "content_scripts": [
     {
       "matches": ["https://live.bilibili.com/*"],
-      "js": ["./js/clear22.js"],
+      "js": ["./src/clear22/index.js"],
       "run_at": "document_start"
     },
     {
@@ -20,7 +20,12 @@
         "https://space.bilibili.com/*",
         "https://www.bilibili.com/read/*"
       ],
-      "js": ["./js/biliTag.js"],
+      "js": ["./src/biliTag/index.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://blog.csdn.net/*/article/details/*"],
+      "js": ["./src/csdn/index.js"],
       "run_at": "document_end"
     }
   ],

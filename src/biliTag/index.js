@@ -11,7 +11,7 @@ const keyword = {
   只因: ["小黑子", "只因", "cxk", "鸡脚", "鸡你太美", "只因你太美"],
   抽奖: ["互动抽奖"],
 };
-const blogUrl =
+const getBlogUrl =
   "https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space?&host_mid=";
 const isNew =
   document.getElementsByClassName(
@@ -41,7 +41,6 @@ const getCommentList = () => {
 };
 
 (function () {
-  console.log("开始打标~");
   const biliIdStack = new Set();
   let tagList = [];
 

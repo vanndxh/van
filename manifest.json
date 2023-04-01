@@ -33,6 +33,7 @@
     "storage",
     "webRequest",
     "webRequestBlocking",
-    "*://api.bilibili.com/*"
+    "*://api.bilibili.com/*",
+    "*://*/*"
   ]
 }

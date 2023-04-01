@@ -1,7 +1,7 @@
 {
   "name": "van",
   "description": "写着玩的小插件",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 3,
   "action": {
     "default_popup": "./src/popup/popup.html",
@@ -27,13 +27,12 @@
       "matches": ["https://blog.csdn.net/*/article/details/*"],
       "js": ["./src/csdn/index.js"],
       "run_at": "document_end"
+    },
+    {
+      "matches": ["https://wenku.baidu.com/view/*"],
+      "js": ["./src/baiduDoc/index.js"],
+      "run_at": "document_end"
     }
   ],
-  "permissions": [
-    "storage",
-    "webRequest",
-    "webRequestBlocking",
-    "*://api.bilibili.com/*",
-    "*://*/*"
-  ]
+  "permissions": ["storage", "*://api.bilibili.com/*"]
 }

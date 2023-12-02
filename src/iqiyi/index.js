@@ -12,6 +12,8 @@ const iqiyi = () => {
     "nav-link nav-vip",
     "qy-player-side-list",
     "qy-nav",
+    "meta-tab",
+    "meta-cont",
   ];
   // 顶部目录无用内容
   classNames.forEach((i) => {

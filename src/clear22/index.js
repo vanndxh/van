@@ -1,4 +1,6 @@
-/** 关闭b站直播间22娘 */
+/** 
+ * @file 关闭b站直播间22娘
+ */
 const clearBili22 = () => {
   const elements = document.getElementsByClassName("avatar-btn");
   let timer = setInterval(() => {

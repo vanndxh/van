@@ -1,4 +1,6 @@
-/** 全文阅读，本质是vip破解 */
+/** 
+ * @file 全文阅读，本质是vip破解
+ */
 const getVip = () => {
   let timer = setInterval(() => {
     if (window.pageData) {

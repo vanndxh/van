@@ -3,17 +3,22 @@
  */
 const iqiyi = () => {
   const classNames = [
+    "nav-link nav-vip", // 左上角导航
     "header-sideItem qy-header__game",
     "header-sideItem header-download",
     "header-sideItem header-upload",
     "iqp-ivos-video-top",
     "header__weather",
     "header-sideItem header-vip",
-    "nav-link nav-vip",
     "qy-player-side-list",
     "qy-nav",
-    "meta-tab",
-    "meta-cont",
+    "meta-tab", // 右侧面板tab
+    "meta-cont", // 右侧面板信息
+    "iqp-top-item iqp-client-launcher",
+    "iqp-dock-right-cont",
+    "iqp-btn iqp-btn-see-ta", // 只看TA
+    "barrage-input-wrap",
+    "heat_map_canvas_0079",
   ];
   // 顶部目录无用内容
   classNames.forEach((i) => {
